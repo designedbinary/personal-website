@@ -1,0 +1,29 @@
+{
+  "name": "ray",
+  "version": "1.0.0",
+  "description": "personal website for Ray",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designedbinary/personal-website.git"
+  },
+  "author": "Raymond Gonzales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designedbinary/personal-website/issues"
+  },
+  "homepage": "https://github.com/designedbinary/personal-website#readme",
+  "devDependencies": {
+    "html-loader": "^0.5.1",
+    "jshint": "^2.9.5",
+    "jshint-loader": "^0.8.4",
+    "lodash": "^4.17.4",
+    "markdown-loader": "^2.0.1",
+    "webpack": "^3.10.0"
+  }
+}
