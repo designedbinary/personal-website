@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Virtru + OWA"
+title:  "Virtru + Recipient Experience"
 date:   2018-01-06
 categories: work
 ---
