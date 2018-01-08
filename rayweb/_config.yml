@@ -34,6 +34,22 @@ plugins:
 sass:
   style: compressed
 
+defaults: #frontmatter defaults
+-
+  scope:
+    path: "_posts/explorations" #template for all explorations
+    type: "posts"
+  values:
+    layout: "default"
+    categories: explorations
+-
+  scope:
+    path: "_posts/portfolio" #template for all portfolio items
+    type: "posts"
+  values:
+    layout: "default"
+    categories: work
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

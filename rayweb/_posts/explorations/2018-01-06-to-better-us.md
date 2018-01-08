@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "ToBetterUs"
 date:   2018-01-06
-categories: explorations
 ---
 
 Looking back on this personal project, it's fascinating to see how much less we knew and how unprepared we were. Nevertheless, this failure was an incredible learning experience on so many levels.

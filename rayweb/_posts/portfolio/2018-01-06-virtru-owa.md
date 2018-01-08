@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "Virtru + OWA"
 date:   2018-01-06
-categories: work
 ---
 
 ### Task
