@@ -3,12 +3,12 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: #fff !default;
+$header-heading-color: #333 !default;
 $header-bg-color: #159957 !default;
 $header-bg-color-secondary: #155799 !default;
 
 // Text
-$section-headings-color: #159957 !default;
+$section-headings-color: #333 !default;
 $body-text-color: #606c71 !default;
 $body-link-color: #1e6bb8 !default;
 $blockquote-text-color: #819198 !default;
@@ -23,6 +23,6 @@ $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 
 // Fonts
-$display-font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$display-font-stack: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $code-font-stack: Consolas, "Liberation Mono", Menlo, Courier, monospace;
