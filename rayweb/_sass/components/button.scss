@@ -20,16 +20,16 @@
     margin-left: 1rem;
   }
 
-  @include large {
+  @include respond-to(l) {
     padding: 0.75rem 1rem;
   }
 
-  @include medium {
+  @include respond-to(m) {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
-  @include small {
+  @include respond-to(s) {
     display: block;
     width: 100%;
     padding: 0.75rem;

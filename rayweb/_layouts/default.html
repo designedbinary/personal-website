@@ -5,17 +5,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Kanit:400,700,900|Montserrat:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ page.title }}</h1>
-      <h2 class="project-tagline">{{ page.description }}</h2>
-      <h3>{{ page.role }}</h3>
+      
     </section>
 
     <section class="main-content">
+      <h1 class="project-name">testing: {{ page.title }}</h1>
+      <p class="project-description">{{ page.description }}</p>
+      <h3>{{ page.role }}</h3>
+      
       {{ content }}
 
       <footer class="site-footer">

@@ -1,4 +1,4 @@
-@mixin large {
+/*@mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
   }
@@ -14,4 +14,17 @@
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
   }
+}*/
+
+// breakpoints mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+      $value: map-get($breakpoints, $breakpoint);
+       
+      @media screen and (min-width: $value) {
+          @content;
+      }
+  }
+   
+  @warn "Unknown `#{$breakpoint}` in $breakpoints";
 }

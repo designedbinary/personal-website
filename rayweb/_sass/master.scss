@@ -1,12 +1,12 @@
 // abstracts
+@import "abstracts/normalize";
+@import "abstracts/modularscale";
+@import "abstracts/typi/typi";
 @import "abstracts/rouge-github";
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
 // base
-@import "base/normalize";
-//@import "base/modularscale";
-//@import "base/typi/typi";
 @import "base/typography";
 
 // Components
@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
-  object-fit: contain;
+  //object-fit: contain;
 }
 
 a {
@@ -45,54 +45,54 @@ a {
   color: $header-heading-color;  //background-color: $header-bg-color;
   //background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
-  @include large {
+  @include respond-to(l) {
     padding: 5rem 6rem;
   }
 
-  @include medium {
+  @include respond-to(m) {
     padding: 3rem 4rem;
   }
 
-  @include small {
+  @include respond-to(s) {
     padding: 2rem 1rem;
   }
 }
 
-.project-name {
+/*.project-name {
   color: inherit;
   margin-top: 0;
   margin-bottom: 0.1rem;
   text-transform: uppercase;
 
-  @include large {
+  @include respond-to(l) {
     font-size: 3.25rem;
   }
 
-  @include medium {
+  @include respond-to(m) {
     font-size: 2.25rem;
   }
 
-  @include small {
+  @include respond-to(s) {
     font-size: 1.75rem;
   }
-}
+}*/
 
-.project-tagline {
+.project-description {
   color: inherit;
   margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7;
 
-  @include large {
-    font-size: 1.25rem;
+  @include respond-to(l) {
+    font-size: ms(1);
   }
 
-  @include medium {
-    font-size: 1.15rem;
+  @include respond-to(m) {
+    font-size: ms(1);
   }
 
-  @include small {
-    font-size: 1rem;
+  @include respond-to(s) {
+    font-size: ms(1);
   }
 }
 
@@ -103,19 +103,19 @@ a {
     margin-top: 0;
   }
 
-  @include large {
+  @include respond-to(l) {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
-  @include medium {
+  @include respond-to(m) {
     padding: 2rem 4rem;
     font-size: 1.1rem;
   }
 
-  @include small {
+  @include respond-to(s) {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
@@ -170,15 +170,15 @@ a {
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
 
-  @include large {
+  @include respond-to(l) {
     font-size: 1rem;
   }
 
-  @include medium {
+  @include respond-to(m) {
     font-size: 1rem;
   }
 
-  @include small {
+  @include respond-to(s) {
     font-size: 0.9rem;
   }
 }
