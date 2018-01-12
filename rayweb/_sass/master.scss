@@ -24,9 +24,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: $body-font-stack;
-  font-size: 16px;
-  line-height: 1.5;
+
   color: $body-text-color;
   //object-fit: contain;
 }
@@ -76,6 +74,15 @@ a {
     font-size: 1.75rem;
   }
 }*/
+
+.project-body{
+  &:not(div){
+  max-width: 600px;
+  }
+    @include respond-to(l){
+      padding-left: 7em;
+    }
+}
 
 .project-description {
   color: inherit;

@@ -14,11 +14,14 @@
     </section>
 
     <section class="main-content">
-      <h1 class="project-name">testing: {{ page.title }}</h1>
-      <p class="project-description">{{ page.description }}</p>
-      <h3>{{ page.role }}</h3>
+      <h1 class="project-name">{{ page.title }}</h1>
       
-      {{ content }}
+      <div class="project-body">
+        <p class="project-description">{{ page.description }}</p>
+        <p class="project-info"><span>Role:</span>{{ page.role }}</p>
+        
+        {{ content }}
+      </div>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}

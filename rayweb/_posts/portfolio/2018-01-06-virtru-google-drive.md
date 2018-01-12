@@ -1,7 +1,8 @@
 ---
-title:  "Virtru + Google Drive"
-description: something goes ehre adn maybe more content or something or otehr bluab lueahrlsdf jdsfkljsdf kjsdf lkjsdflkjsdflkj ldkfj sdf sdfjwejflwdjf jokwejf j owh nwklj flskj
-role: Designer
+title:  "Securely and Easily Share Files from Google Drive"
+description: A key aspect of modern work communication is exchanging files. While you might be able to hand a secure USB stick with a colleague, or share a secure network drive, it's not the preferred (and more convenient) way of sharing in a cloud dependant work environment.
+goal: Add a layer of security on top of Google Drive that allows end-users to share sensitive data without detrimentally disrupting normal consumption and collaboration.
+role: UX Lead
 date:   2018-01-06
 ---
 
@@ -9,9 +10,13 @@ date:   2018-01-06
 
 ![High fidelity mockups for various components of the Virtru Drive experience]({{"./assets/virtru_drive_examples3.png" | absolute_url }} "High fidelity mockups for various components of the Virtru Drive experience")
 
-![Onboarding]({{"./assets/virtru_drive_examples4.png" | absolute_url }} "onboarding")
+<div><img src="{{"./assets/virtru_drive_examples4.png" | absolute_url }}" alt="onboarding"></div>
 
 ### Task
+
+This is a line of text with about 70 characters and it is pretty neat
+
+This is a line of text with about 50 characters.
 
 Give organizations the ability protect their data on Google Drive.
 
