@@ -22,7 +22,7 @@
 }
 
 body {
-  padding: 0;
+  padding: 2em;
   margin: 0;
 
   color: $body-text-color;
@@ -76,12 +76,16 @@ a {
 }*/
 
 .project-body{
-  &:not(div){
-  max-width: 600px;
-  }
+
+  max-width: 50em;
+
     @include respond-to(l){
-      padding-left: 7em;
+      //padding-left: 7em;
     }
+
+  h1, h2, h3, h4, h5, h6, p, ul, li, ol{
+    max-width: 33.750em;
+  }
 }
 
 .project-description {
@@ -172,14 +176,16 @@ a {
   }
 }
 
-.project-body{
-  h2, h3, h4, p{
-   max-width: 33.750em;
-  }
-}
-
 figure{
   background-color: #f4f4f4;
+  margin: 0;
+  padding: 2em;
+
+  margin-bottom: vr(2);
+
+  figcaption {
+    padding-top: 1em;
+  }
 }
 
 .site-footer {
