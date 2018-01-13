@@ -6,11 +6,13 @@ role: UX Lead
 date:   2018-01-06
 ---
 
-![High fidelity mockups for encrypting a file]({{ "/assets/virtru_drive_examples2.png" | absolute_url }})
 
-![High fidelity mockups for various components of the Virtru Drive experience]({{"./assets/virtru_drive_examples3.png" | absolute_url }} "High fidelity mockups for various components of the Virtru Drive experience")
+{% include figure.html image_asset="/assets/virtru_drive_examples2.png" image_caption="High fidelity mockups for encrypting a file" %}
 
-<div><img src="{{"./assets/virtru_drive_examples4.png" | absolute_url }}" alt="onboarding"></div>
+{% include figure.html image_asset="/assets/virtru_drive_examples3.png" image_caption="High fidelity mockups for various components of the Virtru Drive experience" %}
+
+
+{% include figure.html image_asset="/assets/virtru_drive_examples4.png" image_caption="Examples of onboarding screens" %}
 
 ### Task
 
@@ -49,22 +51,23 @@ I started to piece together a requirements document. After a few meetings indivi
  
 
 ## Understanding the user's experience
-![Understanding user's journey]({{"./assets/virtru_drive_sketch1.png" | absolute_url }} "Understanding the user's journey")
+
+{% include figure.html image_asset="/assets/virtru_drive_sketch1.png" image_caption="Understanding the user's journey" %}
 
 Collaborating with the team, I put together a map about the user's experience to generate a general consensus around core experiences and work out any obvious issues around technical limitations, business objectives, and user experience.
 
 Moving along quickly, I then started sketching out these core experience, keeping things loose and flexible for revisions, quick variations or alternate ideas. Once again, these were brought to the team to help inform the design and mitigate obvious issues.
 
-![Early sketches for managing security options, and encrypting new files]({{"./assets/virtru_drive_sketch2.png" | absolute_url }} "Early sketches for managing security options, and encrypting new files")
+{% include figure.html image_asset="/assets/virtru_drive_sketch2.png" image_caption="Early sketches for managing security options, and encrypting new files" %}
 
 I also worked out some obvious design issues, such as how to distinguish a secured file from a regular one.
 
-![The "encrypted" indicator needed to be easily distinguishable within the drive interface and against file type icons.]({{"./assets/virtru_drive_iconsketch1.png" | absolute_url }} "The "encrypted" indicator needed to be easily distinguishable within the drive interface and against file type icons.")
-
+{% include figure.html image_asset="/assets/virtru_drive_iconsketch1.png" image_caption="The 'encrypted' indicator needed to be easily distinguishable within the drive interface and against file type icons." %}
  
 ## Going high fidelity
 
-![High fidelity mockups for various aspects of the Virtru Drive experience]({{"./assets/virtru_drive_examples1.png" | absolute_url }} "High fidelity mockups for various aspects of the Virtru Drive experience")
+{% include figure.html image_asset="/assets/virtru_drive_examples1.png" image_caption="High fidelity mockups for various aspects of the Virtru Drive experience" %}
+
 You can only work out so many details with lo-fi sketches. Once I reached a point where core experiences were essentially blocked out, I moved on to higher fidelity mockups to get into the details. With higher fidelity, feedback and comments tend to be more "complete." Furthermore, user testing results also increase in quality.
 
 One of the interactions we worked out at higher fidelity was the drag and drop interaction (click to view). When adding a file to drive, if it met certain criteria, it needed to present the user the option to encrypt it or upload it normal.

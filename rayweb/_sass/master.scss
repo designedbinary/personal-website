@@ -172,6 +172,16 @@ a {
   }
 }
 
+.project-body{
+  h2, h3, h4, p{
+   max-width: 33.750em;
+  }
+}
+
+figure{
+  background-color: #f4f4f4;
+}
+
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;

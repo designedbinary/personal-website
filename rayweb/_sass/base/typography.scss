@@ -47,6 +47,12 @@ $typi: (
     s: 0,
     m: 0,
     l: 0
+  ),
+  figcaption: (  // why isn't this working?
+    null: -1,
+    s: -1,
+    m: -1,
+    l: -1
   )
 );
 
@@ -92,6 +98,10 @@ html, body {
     margin-bottom: 1rem;
     color: $section-headings-color;
   }
+}
+
+figcaption{
+  @include typi('figcaption');
 }
 
 p {
@@ -185,4 +195,10 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
+}
+
+figcaption {
+  color: $caption-text-color;
+  text-align: center;
+  font-style: italic;
 }
