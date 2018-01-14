@@ -1,0 +1,28 @@
+nav {
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding:0;
+
+    @include respond-to(m) {
+      padding: 0rem 4rem;
+    }
+  
+    @include respond-to(s) {
+      padding: 0rem 1rem;
+    }  
+
+    li {
+      list-style: none;
+
+      &:first-child {
+        flex-grow: 3;
+      }
+
+      &:not(:first-child) {
+        margin-left: 1em;
+      }
+    }
+  }
+}

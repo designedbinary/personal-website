@@ -1,0 +1,33 @@
+.quick-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+
+
+}
+
+.project-info {
+  &:nth-child(1) {
+    min-width: 10em;
+    flex-basis: 50%;
+    flex-shrink: 2;
+
+    @media all and (max-width: map-get($breakpoints, m )) {
+      flex-basis: 100%;
+      margin-bottom: 1em;
+    }
+
+  }
+
+  font-size: ms(0);
+  margin-right: 2em;
+
+  .info-title{
+    display: block;
+    font-size: ms(-1);
+    font-weight: bold;
+    font-family: $body-font-stack;
+    font-style: italic;
+  }
+}

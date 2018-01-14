@@ -3,7 +3,7 @@ title:  "Securely and Easily Share Files from Google Drive"
 description: A key aspect of modern work communication is exchanging files. While you might be able to hand a secure USB stick with a colleague, or share a secure network drive, it's not the preferred (and more convenient) way of sharing in a cloud dependant work environment.
 goal: Add a layer of security on top of Google Drive that allows end-users to share sensitive data without detrimentally disrupting normal consumption and collaboration.
 role: UX Lead
-date:   2018-01-06
+year: '2016'
 ---
 
 

@@ -1,16 +1,46 @@
-.project-body{
-  display: flex;
-  max-width: 50em;
-  flex-direction: column;
-  justify-content: center;
+.main-content {
+  word-wrap: break-word;
 
-    @include respond-to(l){
-      //padding-left: 7em;
-    }
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include respond-to(xl) {
+    margin-left: 7vw;
+  }
+  
+  @include respond-to(l) {
+    max-width: 64rem;
+    padding: 2rem 7vw !important;
+    margin: 0 auto;
+    //margin-left: 4vw;
+  }
+
+  @include respond-to(m) {
+    padding: 2rem 4rem;
+  }
+
+  @include respond-to(s) {
+    padding: 2rem 1rem;
+  }  
+}
+
+.project-body{
+  //display: flex;
+  max-width: 50em;
+  //flex-direction: column;
+  //justify-content: flex-start;
+  //align-items: flex-end;
+
 
   h2, h3, h4, h5, h6, p, ul, ol{
-    max-width: 33.750em;
-    margin-left: 10vw;
+    max-width: 30em;
+    //flex-basis: 30em;
+    //display: block;
+    @include respond-to(l){
+      margin-left: 7vw;
+    }
   }
 }
 
@@ -36,9 +66,15 @@
 .project-description {
   color: inherit;
   margin-bottom: 2rem;
+  margin-top: 1em;
   font-weight: normal;
   opacity: 0.7;
 
+
+  @include respond-to(xl) {
+    font-size: ms(1);
+  }
+
   @include respond-to(l) {
     font-size: ms(1);
   }
@@ -52,27 +88,3 @@
   }
 }
 
-.main-content {
-  word-wrap: break-word;
-
-  :first-child {
-    margin-top: 0;
-  }
-
-  @include respond-to(l) {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include respond-to(m) {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-  }
-
-  @include respond-to(s) {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-  }  
-}
