@@ -14,7 +14,8 @@
 @import "components/button";
 
 // layout
-
+@import "layout/footer";
+@import "layout/work";
 
 
 * {
@@ -56,161 +57,59 @@ a {
   }
 }
 
-/*.project-name {
-  color: inherit;
-  margin-top: 0;
-  margin-bottom: 0.1rem;
-  text-transform: uppercase;
+// TO DO: Don't know what to do with these
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+  -webkit-overflow-scrolling: touch;
 
-  @include respond-to(l) {
-    font-size: 3.25rem;
+  th {
+    font-weight: bold;
   }
 
-  @include respond-to(m) {
-    font-size: 2.25rem;
-  }
-
-  @include respond-to(s) {
-    font-size: 1.75rem;
-  }
-}*/
-
-.project-body{
-
-  max-width: 50em;
-
-    @include respond-to(l){
-      //padding-left: 7em;
-    }
-
-  h1, h2, h3, h4, h5, h6, p, ul, li, ol{
-    max-width: 33.750em;
+  th,
+  td {
+    padding: 0.5rem 1rem;
+    border: 1px solid $table-border-color;
   }
 }
 
-.project-description {
-  color: inherit;
-  margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7;
+dl {
+  padding: 0;
 
-  @include respond-to(l) {
-    font-size: ms(1);
-  }
-
-  @include respond-to(m) {
-    font-size: ms(1);
-  }
-
-  @include respond-to(s) {
-    font-size: ms(1);
-  }
-}
-
-.main-content {
-  word-wrap: break-word;
-
-  :first-child {
-    margin-top: 0;
-  }
-
-  @include respond-to(l) {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include respond-to(m) {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-  }
-
-  @include respond-to(s) {
-    padding: 2rem 1rem;
+  dt {
+    padding: 0;
+    margin-top: 1rem;
     font-size: 1rem;
+    font-weight: bold;
   }
 
-
-  table {
-    display: block;
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
-    -webkit-overflow-scrolling: touch;
-
-    th {
-      font-weight: bold;
-    }
-
-    th,
-    td {
-      padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
-    }
-  }
-
-  dl {
+  dd {
     padding: 0;
-
-    dt {
-      padding: 0;
-      margin-top: 1rem;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    dd {
-      padding: 0;
-      margin-bottom: 1rem;
-    }
-  }
-
-  hr {
-    height: 2px;
-    padding: 0;
-    margin: 1rem 0;
-    background-color: $hr-border-color;
-    border: 0;
+    margin-bottom: 1rem;
   }
 }
+
+hr {
+  height: 2px;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: $hr-border-color;
+  border: 0;
+}
+
 
 figure{
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 2em;
+background-color: #f4f4f4;
+margin: 0;
+padding: 2em;
 
-  margin-bottom: vr(2);
+margin-bottom: vr(2);
 
   figcaption {
     padding-top: 1em;
   }
-}
-
-.site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
-
-  @include respond-to(l) {
-    font-size: 1rem;
-  }
-
-  @include respond-to(m) {
-    font-size: 1rem;
-  }
-
-  @include respond-to(s) {
-    font-size: 0.9rem;
-  }
-}
-
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
-}
-
-.site-footer-credits {
-  color: $blockquote-text-color;
 }

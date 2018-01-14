@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   </head>
   <body>
@@ -17,9 +17,9 @@
       
       
       <div class="project-body">
-        <h1 class="project-name">{{ page.title }}</h1>
-        <p class="project-description">{{ page.description }}</p>
-        <p class="project-info"><span>Role:</span>{{ page.role }}</p>
+        <h1>{{ page.title }}</h1>
+        <div class="project-description">{{ page.description }}</div>
+        <div class="project-info"><span>Role:</span>{{ page.role }}</div>
         
         {{ content }}
       </div>
