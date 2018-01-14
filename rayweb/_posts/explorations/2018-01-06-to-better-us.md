@@ -1,6 +1,9 @@
 ---
 title:  "ToBetterUs"
-date:   2018-01-06
+description: A key aspect of modern work communication is exchanging files. While you might be able to hand a secure USB stick with a colleague, or share a secure network drive, it's not the preferred (and more convenient) way of sharing in a cloud dependant work environment.
+goal: Add a layer of security on top of Google Drive that allows end-users to share sensitive data without detrimentally disrupting normal consumption and collaboration.
+role: UX Lead
+year: '2016'
 ---
 
 Looking back on this personal project, it's fascinating to see how much less we knew and how unprepared we were. Nevertheless, this failure was an incredible learning experience on so many levels.

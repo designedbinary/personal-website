@@ -1,5 +1,6 @@
 .main-content {
   word-wrap: break-word;
+  max-width: 50em;
 
 
   :first-child {
@@ -27,12 +28,6 @@
 }
 
 .project-body{
-  //display: flex;
-  max-width: 50em;
-  //flex-direction: column;
-  //justify-content: flex-start;
-  //align-items: flex-end;
-
 
   h2, h3, h4, h5, h6, p, ul, ol{
     max-width: 30em;

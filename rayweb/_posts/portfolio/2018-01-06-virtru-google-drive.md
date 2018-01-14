@@ -4,6 +4,7 @@ description: A key aspect of modern work communication is exchanging files. Whil
 goal: Add a layer of security on top of Google Drive that allows end-users to share sensitive data without detrimentally disrupting normal consumption and collaboration.
 role: UX Lead
 year: '2016'
+layout: work
 ---
 
 
