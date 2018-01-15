@@ -3,11 +3,8 @@ layout: "main"
 ---
 
 <div class="home">
-  test
-  {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
-
+  <h1 class="intro-title">Hi, I'm Ray!</h1>
+  <p class="intro-text">I am a designer. I enjoy crafting thoughtful and engaging experiences that help people achieve more.</p>
   {{ content }}
 
   {% if site.categories.work.size > 0 %}
@@ -24,20 +21,18 @@ layout: "main"
     </ul>
 {% endif %}   
 
-    {% if site.categories.explorations.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Explorations" }}</h2>
-      <ul class="post-list">
-        {% for post in site.categories.explorations %}
-          <li>
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-  
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h3>
-          </li>
-        {% endfor %}
-      </ul>
-  {% endif %}
+  {% if site.categories.explorations.size > 0 %}
+  <h2 class="post-list-heading">{{ page.list_title | default: "Explorations" }}</h2>
+  <ul class="post-list">
+      {% for post in site.categories.explorations %}
+        <li>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <span class="post-meta">{{ post.year }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+{% endif %}
 
 </div>

@@ -1,0 +1,40 @@
+.home {
+  max-width: 40em;
+
+  .intro-title {
+    font-size: ms(4);
+    font-weight: 900;
+  }
+
+  .intro-text {
+    font-size: ms(1);
+  }
+
+  .post-list-heading{
+    font-family: $body-font-stack;
+    font-weight: 900;
+    font-size: ms(0);
+    text-transform: uppercase;
+    margin-top: 5em;
+    color: $muted-display-text-color;
+  }
+
+  .post-list {
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: block;
+      border-top: solid 1px #f2f2f2;
+      padding: 1em 0;
+      
+      &:last-child {
+        border-bottom: solid 1px #f2f2f2;
+      }
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }    
+  }
+}
