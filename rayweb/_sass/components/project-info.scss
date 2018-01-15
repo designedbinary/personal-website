@@ -8,20 +8,21 @@
 }
 
 .project-info {
-  &:nth-child(1) {
+  &.top-info {
     min-width: 10em;
-    flex-basis: 50%;
     flex-shrink: 2;
 
     @media all and (max-width: map-get($breakpoints, m )) {
       flex-basis: 100%;
-      margin-bottom: 1em;
+      //margin-bottom: 1em;
     }
 
   }
 
   font-size: ms(0);
-  margin-right: 2em;
+  padding-right: 2em;
+  margin-bottom: 1em;
+  flex-basis: 50%;
 
   .info-title{
     display: block;

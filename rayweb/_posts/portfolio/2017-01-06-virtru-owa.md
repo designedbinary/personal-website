@@ -1,6 +1,11 @@
 ---
-title:  "Virtru + OWA"
-date:   2018-01-06
+title:  "Send and Read Secure Emails from Office 365's Web Email Client"
+description: In an effort to expand further into the enterprise market, Virtru sought to integrate their easy-to-use email encryption services into Microsoft's Web Email client. Its unique design language, tech stack, and users presented some interesting challenges
+goal: Apply all Virtru's send and read capabilities into OWA in a way that minimizes learning effort for users. 
+results: A polished experience that follow's OWA's design language (Fabric UI) while maintaining Virtru's core experience of simple reading and sending. 
+role: UX Lead, UI/UX Design, User Research and Validation, Copywriting, Illustrator
+year: '2017'
+layout: work
 ---
 
 ### Task
