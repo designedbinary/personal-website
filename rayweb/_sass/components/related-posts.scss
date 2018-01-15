@@ -1,0 +1,24 @@
+.related-posts {
+  //font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+
+  a {
+  display: block;
+  border-top: solid 4px #333333;
+  width: 50%;
+  float: left;
+  margin: 1em 1em;
+  max-width: 22rem;
+  }
+
+  .next {
+  //text-align: right;
+  }
+
+  h3 {
+    font-size: ms(1);
+    margin: vr(2) 0;
+  }
+}

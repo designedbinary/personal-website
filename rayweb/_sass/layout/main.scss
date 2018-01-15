@@ -3,9 +3,9 @@
   max-width: 50em;
 
 
-  :first-child {
+  /*:first-child {
     margin-top: 0;
-  }
+  }*/
 
   @include respond-to(xl) {
     margin-left: 7vw;
