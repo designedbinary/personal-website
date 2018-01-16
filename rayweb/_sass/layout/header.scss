@@ -1,4 +1,7 @@
 nav {
+  margin-top: vr(1);
+  //padding: 0 3rem;
+  
   ul {
     display: flex;
     flex-flow: row nowrap;
@@ -10,7 +13,7 @@ nav {
     }
   
     @include respond-to(s) {
-      padding: 0rem 1rem;
+      padding: 0rem 0rem;
     }  
 
     li {
