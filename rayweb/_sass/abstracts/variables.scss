@@ -11,6 +11,7 @@ $primary-color: #384265; //#057aff; // 384265
 $secondary-color: #53799C;
 $highlight-color: #4c70f3;
 $muted-grey-color: #e4e3ed;
+$muted-grey-blue-tinge-color: #9caeb4;
 
 //$large-breakpoint: 64em !default;
 //$medium-breakpoint: 42em !default;
@@ -29,7 +30,7 @@ $body-text-color: $primary-color !default;
 $body-link-color: $highlight-color !default;
 $blockquote-text-color: $secondary-color !default;
 $caption-text-color: $secondary-color !default;
-$muted-display-text-color: #9caeb4 !default;
+$muted-display-text-color: $muted-grey-blue-tinge-color !default;
 
 // Code
 $code-bg-color: #f3f6fa !default;

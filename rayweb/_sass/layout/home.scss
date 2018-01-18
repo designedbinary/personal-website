@@ -1,5 +1,5 @@
 .home {
-  max-width: 40em;
+  max-width: 40rem;
 
   .intro-title {
     font-size: ms(4);
@@ -21,6 +21,19 @@
     text-transform: uppercase;
     margin-top: vr(4);
     color: $muted-display-text-color;
+    position: relative;
+
+    @include respond-to(xl) {
+      &::before {
+        content: '';
+        width: 2rem;
+        height: 0.02rem;
+        left: -3rem;
+        background-color: $muted-display-text-color;
+        position: absolute;
+        transform: translateY(2000%);
+      }
+    }
   }
 
   .post-list {

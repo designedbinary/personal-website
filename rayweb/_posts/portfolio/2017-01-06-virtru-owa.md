@@ -8,6 +8,8 @@ year: '2017'
 layout: work
 ---
 
+{% include figure.html image_asset="/assets/virtru_owa_final1.png" image_caption="An overview of the variety of screens and scenarios that needed some UX work." %}
+
 ### Task
 
 Revive and rework the Virtru experience on Outlook Web App (OWA) and Outlook.com.
@@ -35,14 +37,15 @@ The biggest issues with this project revolved around 1) discovering all the idio
  
 
 ## Practice Makes Perfect
-*Sketching out the reading experience allowed me to inexpensively explore multiple options*
+{% include figure.html image_asset="/assets/virtru_owa_sketches1.png" image_caption="Sketching out the reading experience allowed me to inexpensively explore multiple options" %}
 
 Feeling confident with my findings, I dived into the designs. I sketched out a few of the core experiences, then dived straight into high fidelity mockups. All the tools and existing assets that I've built over the past few years I have been at Virtru gave me the luxury to jump into higher fidelity mockups and produce mockups in a relatively short time. Furthermore, mockups at this fidelity would produce the most accurate feedback with regards to if our experience is seamless in the OWA environment.
 
-*owa2.png*
+{% include figure.html image_asset="/assets/virtru_owa_explorations1.png" image_caption="Thoroughly exploring a variety of solutions." %}
+
 For certain key experiences, such as reading and writing, we elevated the designs by adding animation. As much as we wanted to fit into the native experience, it was also important to stand out a bit, partly for brand emphasis, but mostly for useability. Its important for our users to know when an email is secure, and when it is not. As such, this experience needed to grab the users' attention just enough.
 
-*virtru_on.gif*
+{% include figure.html image_asset="/assets/virtru_owa_virtru_on.gif" image_caption="Animation prototypes helped us to understand how animation could help users better acclimate to a new status." %}
 
  
 

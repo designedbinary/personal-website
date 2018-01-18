@@ -3,3 +3,8 @@ img {
   max-height: 100%;
   width: 100%; //
 }
+
+.image-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
