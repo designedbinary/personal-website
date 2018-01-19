@@ -1,0 +1,18 @@
+---
+layout: "main"
+---
+
+<div class="project-body">
+  <h1>{{ page.title }}</h1>
+  <div class="project-description">{{ page.description }}</div>
+  
+  <div class="quick-info">
+    <div class="project-info top-info"><span class="info-title">Goal:</span>{{ page.goal }}</div>
+    <div class="project-info top-info"><span class="info-title">Results:</span>{{ page.results }}</div>
+    <div class="project-info"><span class="info-title">Role:</span>{{ page.role }}</div>
+    <div class="project-info"><span class="info-title">Date:</span>{{ page.year }}</div>
+  </div> 
+  
+  {{ content }}
+
+</div>
