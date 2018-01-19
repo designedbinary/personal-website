@@ -1,0 +1,64 @@
+.related-posts {
+  //font-size: 14px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  //align-items: flex-start;
+  //width: auto;
+  //overflow: hidden;
+  border-bottom: solid 1px $hr-border-color;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+
+  @include max-respond-to(m){
+    flex-flow: row wrap;
+  }
+
+  h2, h3 {
+    margin: 0 !important;
+  }
+
+  h2 {
+    flex-basis: 40%;
+    font-size: ms(1);
+    align-self: center;
+    font-family: $body-font-stack;
+    opacity: 0.3;
+    padding-right: 2rem;
+
+    @include max-respond-to(m){
+      flex-basis: 100%;
+      margin-bottom: 2rem !important;
+    }
+  }
+  
+  a {
+  //flex-basis: 50%;
+  //border-top: solid 4px #333333;
+  //width: 50%;
+  //float: left;
+  //margin: 1em 1em;
+  //max-width: 22rem;
+  }
+
+  .next {
+  //text-align: right;
+  }
+
+  h3 {
+    flex-basis: 30%;
+    font-size: ms(1);
+    margin: vr(2) 0;
+    border-left: solid 1px $hr-border-color;
+    padding: 2rem;
+
+    @include max-respond-to(m){
+      flex-basis: 100%;
+      margin-bottom: 2rem !important;
+      border-left: 0px;
+      border-top: solid 1px $hr-border-color;
+      padding: 2rem 0 !important;
+      font-size: ms(2);
+    }
+  }
+}
