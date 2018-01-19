@@ -33,20 +33,22 @@ sass:
   style: compressed
 
 defaults: #frontmatter defaults
--
-  scope:
+- scope:
     path: "_posts/explorations" #template for all explorations
     type: "posts"
   values:
     layout: work
     categories: explorations
--
-  scope:
+- scope:
     path: "_posts/portfolio" #template for all portfolio items
     type: "posts"
   values:
     layout: work
     categories: work
+- scope:
+    path: "assets"
+  values:
+    image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
