@@ -17,7 +17,7 @@ title: Ray Gonzales
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio website for Ray Gonzales. A Product, UX, UI, you-name-it designer passionate about crafting thoughtful and engaging experiences that help users achieve more. 
-baseurl: "/personal-website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: designedbinary
 github_username:  designedbinary
