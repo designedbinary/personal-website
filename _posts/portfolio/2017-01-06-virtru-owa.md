@@ -22,7 +22,7 @@ As much as possible, when integrating with a service, my goal is to make Virtru 
 
 For the attachment experience, the solution seemed pretty straightforward: disable any OneDrive options, provide some indication that encryption was on, but otherwise reuse all existing UI for attaching a specific file. (OneDrive integration was the only real technical constraint we knew about when we started)
 
-*Show screens about old attachment experience*
+{% include figure.html image_asset="/assets/virtru_owa_attachment_01.png" image_caption="The native attachment experience brought users to a new screen where they would select the source for their attachment, then select the file." %}
 
 Collaborating with the dev team all along the way, we built and brought this feature into beta. While in beta, we discovered that the DOM selectors we were using to identify certain UI elements were constantly in flux. The DOM selectors allowed us to pinpoint a location by which we could inject Virtru UI on top of OWA. Any selector changes resulted in missing Virtru UI elements and broken experiences. 
 
@@ -32,7 +32,7 @@ The constant selector battle was eating up resources, delaying other projects, a
 
 Ultimately, the solution was a tiered approach to battling selector changes and a simplification of the attachment experience to reduce our reliance on selectors. 
 
-*show a screen with new attachment experience*
+{% include figure.html image_asset="/assets/virtru_owa_attachment_02.png" image_caption="The altered approach simply brought users straight to the system file browser window, while also explaining why the native options are disabled." %}
 
 While this experience, is different from the native experience, it provided a much more stable experience for users. The initial encounter might be a little awkward, but once the user learns this behavior, it quickly becomes second nature. A consistent experience is much preferred than one that constantly keeps you guessing.
 
@@ -58,7 +58,9 @@ All users are required to Activate Virtru to use its services. Furthermore, acti
 
 In the early days of Virtru, we decided to make activation contextual on all email clients. Our feature library at the time was very simple and this interaction minimized "annoying" activation requests. We sought to present the request only in the context when users are in the mindset to interact with Virtru. So, on our first iteration, we simply applied this interaction pattern. 
 
-*show image of activation requests*  
+{% include figure.html image_asset="/assets/virtru_owa_activation_compose.png" image_caption="Contexual activation when composing a secure email." %}
+
+{% include figure.html image_asset="/assets/virtru_owa_activation_read.png" image_caption="Contextual activation when reading a secure email." %}
 
 During the beta period, we received feedback that Virtru wasn't working as expected. As we dug into the issue, we did indeed discover that a newer Virtru feature wasn't working for some folks. This newer feature was a Data Loss Prevention (DLP) rule set. This feature was intended to automate the process of encrypting an email. Essentially, Virtru would scan the contents of an email and check it against a customer made rule set. If it found a match, Virtru would encrypt the email before completing the send action. 
 
@@ -66,7 +68,7 @@ New users would create those DLP rules, install Virtru, go through the onboardin
 
 The ideal solution would be to automate the activation for the user. Due to security concerns, user opt-in is necessary. So, I proposed a multi-pronged approach to activation. Initial activation would happen prior to onboarding when the user first installs Virtru. In addition, contextual activation would remain for certain follow-up activation scenarios. 
 
-*Show image of new activation screen*
+{% include figure.html image_asset="/assets/virtru_owa_activation_install.png" image_caption="With activation as the first step, DLP rules now ran as expected." %}
 
 The result was much less confusion about when you can start using Virtru. 
 
@@ -74,10 +76,10 @@ The result was much less confusion about when you can start using Virtru.
 
 {% include figure.html image_asset="/assets/virtru_owa_sketches1.png" image_caption="Sketching out the reading experience allowed me to inexpensively explore multiple options" %}
 
-*Compose experience for free tiered users*
+{% include figure.html image_asset="/assets/virtru_owa_virtru_decrypt.gif" image_caption="A prototype of the decryption experience." %}
 
-*Integrating with Outlook, every aspect of the experience had to be considered. In this case, we had to notify users that we could not securely support OneDrive.*
+{% include figure.html image_asset="/assets/virtru_owa_compose_security_options_selected_upgrade.png" image_caption="Security options would be unlocked once users subscribed to Virtru." %}
 
-*The read receipt experience had to be modified a bit to better align with Outlook's interaction paradigms.*
+{% include figure.html image_asset="/assets/virtru_owa_read_receipt_group_expanded.png" image_caption="Read receipt allowed senders to know when recipients have read a secure email." %}
 
-*Security checks also needed to fit Outlooks Visual design language*
+{% include figure.html image_asset="/assets/virtru_owa_read_intcheck_potentially_malicious_open.png" image_caption="" %}
