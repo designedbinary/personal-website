@@ -19,15 +19,11 @@
     <footer class="site-footer">
       <div class="main-content">
         {% if page.url == "/" %}
-          &nbsp;
+           
         {% else %}
           {% include related_posts.html %}
         {% endif %}
 
-
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
         <span class="site-footer-credits">I'm also on <a href="https://github.com/designedbinary">GitHub,</a> <a href="https://twitter.com/designedbinary">Twitter,</a> and <a href="www.linkedin.com/in/ray-gonzales-006b518
           ">LinkedIn</a>.</span>
       </div>
