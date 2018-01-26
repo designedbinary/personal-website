@@ -16,13 +16,6 @@ layout: work
 
 {% include figure.html image_asset="/assets/virtru_drive_examples4.png" image_caption="Examples of onboarding screens" %}
 
-### Task
-
-This is a line of text with about 70 characters and it is pretty neat
-
-This is a line of text with about 50 characters.
-
-Give organizations the ability protect their data on Google Drive.
 
 ### Discovery
 
@@ -73,8 +66,6 @@ I also worked out some obvious design issues, such as how to distinguish a secur
 You can only work out so many details with lo-fi sketches. Once I reached a point where core experiences were essentially blocked out, I moved on to higher fidelity mockups to get into the details. With higher fidelity, feedback and comments tend to be more "complete." Furthermore, user testing results also increase in quality.
 
 One of the interactions we worked out at higher fidelity was the drag and drop interaction (click to view). When adding a file to drive, if it met certain criteria, it needed to present the user the option to encrypt it or upload it normal.
-
-*Exploring potential options for drag and drop*
 
 ## Validating Assumptions
 As with any project, we made a few assumptions about user goals and user behaviors. Furthermore, there were differing opinions about how best to approach the user experience.
