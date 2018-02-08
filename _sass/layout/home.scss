@@ -5,9 +5,31 @@
     font-size: ms(4);
     font-weight: 900;
     margin-top: vr(4) !important;
-    @media all and (max-width: map-get($breakpoints, m )) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    div{
+      padding-right: 1rem;
+
+      @include max-respond-to(m){
+        padding-right: .5rem
+      }
+    }
+    
+    div:last-child{
+      padding-right: 0px;
+    }
+
+    @include max-respond-to(m){
       font-size: ms(3);
     }
+  }
+
+  .fade-after{
+    overflow: hidden;
   }
 
   .intro-text {
