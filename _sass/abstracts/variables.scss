@@ -30,7 +30,8 @@ $body-text-color: $primary-color !default;
 $body-link-color: $highlight-color !default;
 $blockquote-text-color: $secondary-color !default;
 $caption-text-color: $secondary-color !default;
-$muted-display-text-color: $muted-grey-blue-tinge-color !default;
+$project-info-display-text-color: $primary-color !default;
+$muted-display-text-color: $muted-grey-blue-tinge-color;
 
 // Code
 $code-bg-color: #f3f6fa !default;

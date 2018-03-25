@@ -7,8 +7,8 @@
   //width: auto;
   //overflow: hidden;
   border-bottom: solid 1px $hr-border-color;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 
   @include max-respond-to(m){
     flex-flow: row wrap;
