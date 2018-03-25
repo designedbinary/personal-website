@@ -2,14 +2,14 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 
 
 }
 
 .project-info {
   &.top-info {
-    min-width: 10em;
+    min-width: 10rem;
     flex-shrink: 2;
 
     @media all and (max-width: map-get($breakpoints, m )) {
@@ -20,8 +20,8 @@
   }
 
   font-size: ms(0);
-  padding-right: 2em;
-  margin-bottom: 1em;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
   flex-basis: 50%;
 
   .info-title{
@@ -30,6 +30,6 @@
     font-weight: bold;
     font-family: $body-font-stack;
     font-style: italic;
-    color: $muted-display-text-color;
+    color: $project-info-display-text-color;
   }
 }
