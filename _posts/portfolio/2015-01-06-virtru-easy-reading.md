@@ -1,9 +1,9 @@
 ---
 title:  "For Encrypted Emails, the Recipient UX is Key."
-description: The key experience for a useful email exchange is the recipient experience. Even "simple" barries can discourage a recipient from continuing forward. Once that happens, they would eventually encourage senders to stop using Virtru. 
-goal: Make the reading experience as painless as possible 
-results: An ongoing journey with continued improvements that have allowed more and more organizations to use Virtru in more practical situations. 
-role: UX Lead, UI/UX Design, User Research and Validation, Copywriting, Illustrator
+description: The key to secure communication is the recipient experience. While a sender might be very motivated to jump through hoops to secure their message, simple barriers can discourage or prevent a recipient from consuming that message. At that point, communication is not achieved, time has been wasted, and both parties are frustrated. With enough frustration, Virtru ceases to provide value and loses a customer. 
+goal: Allow for secure communication by making the reading experience as painless as possible 
+results: An ongoing journey with continued improvements that has allowed Virtru to become a viable email encryption solution for many organizations. 
+role: UX Lead, UI/UX Design, User Research and Validation, Copywriting
 year: '2015'
 layout: work
 ---
@@ -11,42 +11,71 @@ layout: work
 
 {% include figure.html image_asset="/assets/virtru_recipient_example_primary.gif" image_caption="The reading experience for a Virtru email recipient without Virtru installed" %}
 
-Below are some of the major challenges we tackled through iterative UX and clever development.
+The recipient UX went through many iterations throughout my tenure at Virtru. I learned a lot of valuable lessons through those iterations. Here are a few of the major iterations, how I approached them, and what I learned.
 
-## A bit of background
+## Iteration 1: Reading in the inbox
 
-Traditional email encryption software, such as PGP, has been around since the 90's. Yet, its not widely adopted. In terms of encryption, it is tried and true. In terms of UX, all parties in communication need to be technically savvy enough to install it, generate keys, and exchange keys with those they communicate with, prior to communication. In short, its hard to use. Hard enough that its not practical for day to day communication. (Here's a [short video](https://youtu.be/irYluSTChIY) on how to get PGP up and running)
+The goal of our first iteration was to make the install and setup process as easy as possible. This goal was based on the [difficulty of setting up and using PGP](https://youtu.be/irYluSTChIY), the long-time standard for email encryption. PGP has been around since the late 90's, yet its relatively unknown. Our theory was that if you could make this easier, more folks would use it.
 
-Senders might be motivated enough to implement the software on their end. But they would be hard pressed to convince most recipients. If you couldn't convince your recipients to use a particular service, you'll eventually cease to see the value of a service that doesn't help you communicate.
+Naively, we made our initial target audience Everyone. At the time, we had recently entered a post-Snowden world. Everyone we had spoken to was very excited about the prospect of an easy to use encryption service. Furthermore, we believed that it was everyone's right to communicate privately in whatever medium they chose. We wanted to bring about societal change where everyone was able to do just that. Hence, our target audience = everyone.
 
-## Click to install, click to setup
+My first task was to smooth out the already built workflow. I set off to simplify certain processes and make information more consumable. 
 
-With the most difficult part of traditional encryption software being the install and setup process, the theory behind the very first version of Virtru was simple: make this part as easy as a click, then non-technical senders and recipients will start encrypting their emails. As a chrome plug-in for Gmail, installation was a simple click. Setup was also another click to activate the service. After that, sending a secure email was a flip of a switch, and decrypting a secure email to read it was automatic. The experience was more or less like normal email.
+{% include figure.html image_asset="/assets/virtru_recipient_ptr_workflow.png" image_caption="Initial workflow for recipients reading a secure email." %} 
 
-{% include figure.html image_asset="/assets/virtru_recipient_first_iteration.jpg" image_caption="The first version brought recipients to an install screen where they could install the Virtru plugin." %}
+{% include figure.html image_asset="/assets/virtru_recipient_early_landing.jpg" image_caption="Initially, the landing page to install Virtru was a wall of text. I made it more consumable by adding in images and reducing the text as much as possible." %}
 
-So, we started here, put it in front of users and discovered a major shortcoming of this strategy. Senders loved the ease at which they could install Virtru and send encrypted messages Recipients, however, had a different reaction. Recipients who installed the software thought it was great! Unfortunately, a majority of recipients did not want to install anything, particularly in less-than-sensitive situations, such as casual conversations.
+{% include figure.html image_asset="/assets/virtru_recipient_early_inbox.jpg" image_caption="Once a recipient had installed Virtru, the secure email would decrypt directly in their inbox. Here's an early mockup of the initial experience." %}
 
-## Nobody wants to install anything
+I put this in front of users at various points for feedback. The results were very interesting. On one hand, we did make it very easy for users to install and setup. Everything was just a simple click that users responded very well to. On the other hand, we found that most recipients did not want to install anything, no matter how easy/quick it was. So, while we succeeded in meeting our initial goal, we did not quite meet the recipient's needs.  
 
-If first time virtru email recipients didn't want to install anything, we had to find a solution that accommodated this expectation. Our next iteration still allowed for the installation of Virtru, but gave an option to simply read the message through a secure portal. The idea was to include an attached copy of the secure content. Recipients would then download that attachment and drop it into a secure portal for decryption. The secure portal required the recipient to verify their identity using an oauth option. Once verified, the recipient would simply drop the file into the secure portal to decrypt and read.
+## Iteration 2: Reading in a web portal
 
-{% include figure.html image_asset="/assets/virtru_recipient_attachments_dropped.png" image_caption="An early wireframe of how a recipient would consume a secure message dropped into the secure reader." %}
+Our next iteration had to allow the recipient to consume a secure message without installing Virtru. With our small team, we brainstormed/sketched potential solutions but had to contend with significant technical limitations and privacy concerns. 
 
-With prototypes created, we put them in front of users. We soon discovered that while we eliminated the cognitive barrier of installing something, we added significant cognitive load by requiring downloading, verification, then uploading the secure message attachment to a portal. There were simply too many steps for most recipients. Furthermore, for recipients who took the time to try to read the message, there were too many places to make mistakes. Some users wondered what the file format was, others simply got lost along the way and gave up.
+Ultimately, we settled on a secure web portal that allowed recipients to consume a secure message without having to install anything. 
 
-## Auto load secure content
+{% include figure.html image_asset="/assets/virtru_recipient_iteration1_sketch.png" image_caption="Once we settled on a solution, I would sketch out how the entire experience would feel, to ensure that we are wholistically considering the recipient experience. This particular solution was a bit hairy as it required creating an account as well as downloading and uploading a secure file." %}
 
-Luckily, at a certain point, the development team discovered a solution that allowed us to auto-populate the encrypted content into the secure reader. 
+But, it did come with two significant issues that could hinder the recipient experience. These issues were an unavoidable by product of our technical limitations at the time and the privacy tenants we needed to preserve. The first issue was creating an account. Would a recipient, who did not elect to use Virtru, sign up for an account to use Virtru? The second issue involved the proposed encrypted attachment. Basically, in order to decrypt the secure message, each secure email would have an attachment that was a copy of the encrypted content. The recipient would then need to download that attachment THEN upload it back into the secure web portal, where it would be decrypted. Would users get lost in this process?  
 
-So, we revised the recipient experience again, making the link to the auto-populated secure reader as the primary action for recipients. In addition, we completely removed the secure message attachment experience as it was deemed utterly confusing. In addition, we added an email auth option, as user testing indicated that some users thought we might be stealing their email credentials when they went through the Oauth process. 
+To assess these concerns, we created small prototypes at various fidelity (from simple click throughs to functional components) and put it in front of users. 
 
-{% include figure.html image_asset="/assets/virtru_recipient_read_experience_email.png" image_caption="A simplified email brought recipients straight to the secure reader." %}
+The results were disappointing. Most recipients didn't care to create an account. Furthermore, the attachment idea had too many steps where many users simply got lost or thought they downloaded a virus. But one interesting result was that context of the sender greatly impacted the recipients motivation to read a secure email. An email in a professional context generally saw more effort to read its content than an email in a personal context.
 
-{% include figure.html image_asset="/assets/virtru_recipient_read_experience_decrypt.png" image_caption="The secure reader allows recipients to consume secure email content without having to install Virtru. Furthermore, it provides recipients an option to reply securely as well." %}
+## Iteration 2.5: Improving the web portal
 
-These revisions proved to be the most successful, making Virtru a viable solution and allowing it to expand into more markets.  
+From the lessons learned in iteration 2, our next solution had to do a few things: 1) verify the identify of recipients without requiring an account creation 2) automatically load the secure content to the web portal without compromising security and privacy. 
 
-## What's next?
+Luckily, the engineering team had figured out a technical solution that allowed us to solve both of these issues. 
 
-By chipping away at the recipient pain points, we've dramatically improved the reading experience. Where the recipient experience used to turn customers away, our incremental improvements now allow Virtru to be used in day to day professional settings. There are still a bunch of other things we need to improve and a bunch of other pain points we've discovered, but will continue to chip away at this problem. 
+{% include figure.html image_asset="/assets/virtru_recipient_iteration25_workflow.PNG" image_caption="The new solution had significantly less steps than the original, reducing complexity and points where users could get lost." %}  
+{% include figure.html image_asset="/assets/virtru_recipient_attachments_dropped.png" image_caption="An early wireframe of what a recipient would see when viewing a secure email in the secure web portal." %} 
+
+Once again, we set to validate our assumptions through a variety of lo-fi prototypes to working components put in front of users. At this point, our users were also much more targeted to individuals in professional settings within regulated industries. 
+
+The results were a vast improvement from the last major iteration. Recipients had a significantly higher success rate in consuming a secure email. Furthermore, this iteration allowed Virtru to become a viable solution for many organizations, creating a path to grow from 5 guys in a basement, to 80 people with an office in DC. 
+
+Through various iterations, we continued to make improvements. The latest experience looks like this: 
+
+{% include figure.html image_asset="/assets/virtru_recipient_final_01.png" image_caption="A recipient opens a secure email and finds this template." %} 
+
+{% include figure.html image_asset="/assets/virtru_recipient_final_02.jpg" image_caption="The recipient would follow the link, and land on a page asking them to verify their identity through a variety of methods." %}
+
+{% include figure.html image_asset="/assets/virtru_recipient_final_03.png" image_caption="Finally, the the most ideal scenario, the recipient would be brought to their decrypted message." %}
+
+{% include figure.html image_asset="/assets/virtru_recipient_final_mobile.PNG" image_caption="As mobile accounts for nearly one-third of all email consumption at the time, we also needed to consider a mobile/responsive experience." %}
+
+## Lessons Learned
+
+The recipient experience is still an ongoing project today, with a variety of potential solutions to explore based on a variety of qualitative data we gathered through user tests, interviews, observations, and quantitative data. 
+
+For me, it was one of my first real product design experiences and I learned a lot through the years making iterative improvements.
+
+A few of the more major lessons I learned were: 
+
+* Setting clear success metrics, even educated guesses, helps to gather alignment and direction
+* Qualitative data should be validated with quantitative data
+* Aligning UX goals with other business units produces better results faster
+* Designing for Everyone is designing for no one
+* Know what you are looking to achieve, validate that the users you've selected are the right audience, and test at the lowest fidelity possible that would produce the quickest most impactful results
